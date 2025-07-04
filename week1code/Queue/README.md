@@ -5,8 +5,8 @@ Queue Using Array in C (Interactive Menu)
 
 This project demonstrates a simple Queue data structure implemented in C using a static array. The program provides a menu-driven interface to perform basic queue operations like enqueue, dequeue, and display.
 
-📌 Author: Sanjeevi Ram N
-=============================================================================================================
+Author: Sanjeevi Ram N
+======================================================================================================
 Files
 
 queue-array-c/
@@ -46,7 +46,7 @@ Queue Menu:
 4. Exit
 Enter your choice:
 
-🔄 Example Usage
+Example Usage
 
 Enter your choice: 1
 Enter data to enqueue: 10
