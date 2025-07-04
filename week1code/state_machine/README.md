@@ -8,7 +8,7 @@ ________________________________________________________________________________
 Files Structure
 
 fsm-message-handler/
-├── fsm.c         # Main source code implementing the FSM
+├── state_machine.c         # Main source code implementing the FSM
 └── README.md     # Project documentation
 ________________________________________________________________________________________________________________
 Features
