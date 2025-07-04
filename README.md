@@ -9,18 +9,18 @@ This project covers core C concepts for system-level programming. You’ll find 
 
 ________________________________________________________________________________________________________________
 
- Folder Structure
-           week1code/
-           ├── inc/ # Header files
-           │ ├── udp_common.h
-           │ └── server_state.h
-           ├── src/ # Source files
-           │ ├── client.c # UDP client
-           │ ├── server.c # UDP server + state machine
-           │ ├── udp_common.c # UDP helper functions
-           │ └── server_state.c # FSM logic
-           ├── queue_array.c # Basic queue using array
-           ├── queue_linkedlist.c # Queue using linked list
-           ├── circular_buffer.c # Circular buffer (fixed size)
-           ├── state_machine.c # Simple FSM example
-           ├── Makefile # Build system
+ **Folder Structure***
+            week1code/
+            ├── inc/ # Header files
+            │ ├── udp_common.h
+            │ └── server_state.h
+            ├── src/ # Source files
+            │ ├── client.c # UDP client
+            │ ├── server.c # UDP server + state machine
+            │ ├── udp_common.c # UDP helper functions
+            │ └── server_state.c # FSM logic
+            ├── queue_array.c # Basic queue using array
+            ├── queue_linkedlist.c # Queue using linked list
+            ├── circular_buffer.c # Circular buffer (fixed size)
+            ├── state_machine.c # Simple FSM example
+            ├── Makefile # Build system
