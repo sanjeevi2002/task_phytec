@@ -27,11 +27,11 @@ ________________________________________________________________________________
 
 ##  Features
 
-* ✅ UDP client-server communication
-* ✅ Non-blocking interactive message exchange
-* ✅ State machine based server logic
-* ✅ Modular C design with reusable headers
-* ✅ Makefile for building and cleanup
+* UDP client-server communication
+* Non-blocking interactive message exchange
+* State machine based server logic
+* Modular C design with reusable headers
+* Makefile for building and cleanup
 
 ----------------------------------------------------------------------------------------------------------------
 
