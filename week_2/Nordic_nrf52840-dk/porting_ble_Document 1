@@ -1,0 +1,100 @@
+Weekly Report: BLE Porting in Contiki-NG for nRF52840
+
+
+Name: Sanjeevi Ram N
+Project: BLE Porting in Contiki-NG
+Platform: nRF52840
+Duration: Week 1
+Status: Completed
+
+
+	To port and enable BLE (Bluetooth Low Energy) communication on the nRF52840 platform using the Contiki-NG operating system. The goal is to lay the groundwork for BLE functionalities such as advertisement and GATT services.
+
+Tasks Completed
+
+Environment Setup :
+
+    Installed Contiki-NG on Ubuntu 20.04.
+
+    Verified toolchain, USB interface, and programming capability using the hello-world example on nRF52840.
+
+Codebase Exploration:
+
+    Explored Contiki-NG architecture, focusing on:
+
+        Radio drivers under arch/cpu/arm/nrf
+
+        Networking layers and modular build system
+
+    Studied BLE stack architecture, including:
+
+        Application
+
+        GATT/GAP
+
+        L2CAP/ATT
+
+        HCI
+
+        Link Layer (LL)
+
+        Physical Layer (2.4GHz)
+
+BLE Integration Planning:
+
+       Analyzed integration options:
+
+       Found native BLE support in Contiki-NG is limited
+
+       Decided to implement custom BLE radio and network drivers
+       
+
+Directory Structure Preparation :
+
+contiki-ng/
+├── arch/
+│   ├── cpu/
+│   │   ├── arm/
+│   │   │   ├── cortex-m4/                  # Cortex-M4 support
+│   │   │   ├── nrf/
+│   │   │   │   ├── ble-radio/              # Custom BLE radio driver
+│   │   │   │   │   ├── ble-radio.c
+│   │   │   │   │   └── ble-radio.h
+├── platform/
+│   ├── nrf52840dk/
+│   │   ├── contiki-conf.h                  # Platform configuration
+│   │   ├── Makefile.include                # Include ble-radio module
+├── os/
+│   └── net/
+│       └── ble-net/                        # Custom BLE network driver
+│           ├── ble-net.c
+│           └── ble-net.h
+├── examples/
+│   └── ble/
+│       ├── Makefile
+│       └── ble-simple-demo.c              # BLE demo application
+
+
+Challenges
+
+         Contiki-NG does not have built-in BLE stack for nRF52840.
+
+         Requires writing and integrating low-level radio driver and adapting BLE protocol layers manually.
+
+
+research: BLE vs 802.15.4 in Contiki
+
+        compared BLE with Contiki-NG’s native support for IEEE 802.15.4:
+
+        BLE requires different radio timing, packet formats, and MAC layer behavior.
+
+        802.15.4 stack is not reusable directly; BLE requires new LL and PHY interface.
+        
+Learnings:
+
+    Deep understanding of the BLE protocol stack from PHY to GATT.
+
+    Learned Contiki’s modularity and build system to extend or replace core networking layers.
+
+    Understood the role of the radio abstraction layer and how to interface new drivers.
+    
