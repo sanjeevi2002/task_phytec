@@ -29,5 +29,5 @@ Tools Used
 Author
 
 Sanjeevi Ram N  
-Project: Nordic BLE + UART Demo & Porting  
+Project: Nordic BLE  Porting  
 Internship Week 2 – PHYTEC  
